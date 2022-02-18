@@ -1,0 +1,66 @@
+.img-artist-main-header {
+    margin-right: 10px;
+}
+
+.img-main-header {
+    width: 15%;
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 0) {
+    .main-header {
+        padding-top: 5rem;
+        display: block;
+        justify-content: space-between;
+    }
+    .main-header-artist {
+        display: block;
+    }
+    .artist-main-header {
+        display: none
+    }
+    .title-main-header {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .img-main-header {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-header-artist {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 30px;
+    }
+    .main-header {
+        padding-top: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .artist-main-header {
+        display: flex;
+        align-items: flex-end
+    }
+    .img-main-header {
+        margin-top: 3rem;
+        display: block;
+        margin-left: .8rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .title-main-header {
+        width: calc(75% - 40px);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,77 @@
+           .title-bests {
+               text-align: center;
+               color: #FFFFFF;
+               font-weight: bold;
+               font-size: 40px;
+           }
+           
+           .best-item:hover {
+               background: #FF5B50;
+           }
+           
+           .info-best-name {
+               margin-bottom: 1rem
+           }
+           
+           @media screen and (min-width: 0) {
+               .main4 {
+                   padding: 0 2rem 2rem 2rem;
+               }
+               .best {
+                   display: flex;
+                   flex-direction: column;
+               }
+               .best-item {
+                   height: 100px;
+                   color: #FFFFFF;
+                   align-items: center;
+                   justify-content: space-evenly;
+                   display: flex;
+                   background: #252525;
+                   list-style-type: none;
+                   object-fit: cover;
+                   opacity: .9;
+                   margin-top: 1rem;
+               }
+               .best-img {
+                   width: 80px;
+                   height: 80px;
+               }
+           }
+           
+           @media screen and (min-width: 768px) {
+               .main4 {
+                   padding: 0 5rem 5rem 5rem;
+               }
+               .best {
+                   width: 100%;
+                   margin-top: 5rem;
+                   display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                   grid-template-rows: repeat(3, 1fr);
+                   gap: 1rem;
+                   margin-left: 1rem
+               }
+               .best-item {
+                   height: 130px;
+                   color: #FFFFFF;
+                   align-items: center;
+                   justify-content: space-evenly;
+                   display: flex;
+                   background: #252525;
+                   list-style-type: none;
+                   object-fit: cover;
+                   opacity: .9;
+               }
+           }
+           
+           @media screen and (min-width: 1024px) {
+               .best {
+                   grid-template-columns: repeat(3, 1fr);
+                   grid-template-rows: repeat(2, 1fr);
+               }
+               .best-img {
+                   width: 100px;
+                   height: 100px;
+               }
+           }
